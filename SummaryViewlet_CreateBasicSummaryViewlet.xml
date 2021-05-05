@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Basic summary viewlet">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="BasicQuerySummary"/>
+		
+		<!-- <parameter name="Query" value="Subscribe to count of Activity Output Every 10 seconds Show as summary"/> -->
+		<parameter name="Query" value="Get count of Activity Show as summary"/>
+		<parameter name="ViewletName" value="Test"/>
+		
+		<parameter name="ConsoleQuery" value="Get Activity "/>
+		<parameter name="TempVielwetName" value="Temporary viewlet"/>
+		<parameter name="TemporaryQuery" value="Get Events"/>
+		
+		<parameter name="NewQuery" value="Get count of Event Show as summary"/>
+		<parameter name="NewViewletName" value="TestUpdate"/>
+		<parameter name="SaveAsViewletName" value="UpdatedSummary"/>
+		
+			<classes>
+			    <class name="SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet">
+			       <methods>
+                           <include name="Login" />
+                           <include name="CreateSummaryViewlet"/>
+                           <include name="VerifyRecordsCount"/> 
+                           <include name="ObservationOfQuery"/>  
+                           <include name="TemporaryViewlet"/>
+                           <include name="QueryInTemporaryViewlet"/>
+                           <include name="ConsoleTabFunctionality"/>  
+                           <include name="EditSummaryViewletQuery"/> 
+                           <include name="EditOptionInSummaryViewlet"/>   
+                           <include name="SaveSummaryViewlet"/> 
+                           <include name="SaveASSummaryViewlet"/>
+                           <include name="RemoveSummaryViewlet"/>
+                           <include name="DeleteSummaryViewlet"/>  
+                           <include name="ExportSummaryViewlet"/>                     
+                           <include name="Logout"/>   
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

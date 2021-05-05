@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+<test name="SampleIOTSports">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-IOTSports"/>
+        <parameter name="Event_Stack_text" value=" Severity: INFO
+                                                StartTime: Range between 1/28/2017, 12:50:00 AM and 1/28/2017, 12:51:00 AM
+                                                EventName: Catch
+                                                Events Count: 3"/>
+        <parameter name="Event_Severity_Text" value=" Severity: WARNING
+                                                   Tag: Knicks
+                                                   Events Count: 13"/>
+                      
+
+            <classes>
+            
+                     <class name="GlobalRepositories.GlobalRepo_SampleIOTSports">
+                     
+                            <methods>
+                            
+                                      <include name="Login"/>
+                                     <include name="SelectRepositories"/>  
+                                    <!--     <include name="Team_Events_Summary"/>
+                                      <include name="Team_Events_Summary_Console"/> 
+                                      <include name="Passes_Summary"/> 
+                                      <include name="Passes_Summary_console"/> 
+                                      <include name="Activity_Summary_viewlet"/>                                                                     
+                                      <include name="Activity_Count_Summary"/>
+                                      <include name="Statistics_Summary"/> 
+                                      <include name="Statistics_Summary_console"/>                                                                    
+                                      <include name="Event_Scorecard"/>                                  
+                                       <include name="All_Events"/>                                            
+                                    <include name="Event_Stackchart"/>                                      
+                                       <include name="Event_Severity"/>  -->                                                                         
+                                     <include name="Event_Severity_Levels"/>                                
+                                <!--        <include name="Events_by_the_Minute"/> -->                                             
+                                   <!--   <include name="Logout"/>  -->                             
+                                      
+                            </methods>
+
+                      </class>
+
+           </classes>
+
+    </test>
+
+</suite>

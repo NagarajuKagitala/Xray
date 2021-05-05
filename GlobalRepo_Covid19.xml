@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleCovid">
+
+        <parameter name="sUsername" value="prs_suryawanshi"/>
+		<parameter name="sPassword" value="ps12345"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="https://xray.nastel.com/xray/O_prssuryawanshi/login.jsp"/>
+
+        <parameter name="sRepositories" value="Covid19"/>
+       
+
+
+             <classes>
+
+                     <class name="GlobalRepositories.GlobalRepo_Covid19">
+
+                            <methods>
+
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                                      <include name="SummaryViewlet"/>  
+                                    <!--   <include name="covid19Overview"/> -->
+                                     <include name="top_10_countries_by_confirm_cases"/>  
+                                   <!--    <include name="Orders_Anomaly"/>  -->
+                                      <!-- <include name="Activities_in_each_hour_withAnomalies"/> 
+                                      <include name="Logout"/> -->
+
+                           </methods>
+
+                    </class>
+
+           </classes>
+
+  </test>
+
+</suite>

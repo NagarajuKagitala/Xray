@@ -1,0 +1,40 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Verify viewlet">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="EditViewletFilters"/>
+		
+		<parameter name="Query" value="Get number of Event group by ElapsedTime bucketed by hours show as HISTOGRAM"/>
+		<parameter name="ViewletName" value="TestViewlet6"/>
+		<parameter name="Name" value="Activity"/>
+		
+		<parameter name="SortOption" value="Alphabetically"/>
+		<parameter name="ViewbyValueBack" value="Icons"/>
+				
+		<parameter name="ValidChartName" value="Activity Count"/>
+		
+			<classes>
+			    <class name="EditViewletFilterOptions.EditViewletPage_EditViewletFilterOptions">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletWithQuery"/>
+                          <include name="Event"/> 
+                          <include name="Activity"/>
+                          <include name="Snapshot"/>  
+                          <include name="Job"/> 
+                          <include name="Log"/> 
+                          <include name="Relative"/>
+                          <include name="Resource"/> 
+                          <include name="Source"/>                
+                          <include name="Logout"/>  
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

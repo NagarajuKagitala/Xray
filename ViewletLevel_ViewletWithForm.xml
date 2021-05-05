@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Viewlet With Form">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="Create viewlet with form"/>
+		<parameter name="ViewletCheckboxvalue" value="2"/>
+		
+		<parameter name="NewViewletName" value="Form Viewlet"/>
+		<parameter name="ViewletName" value="Viewlet Form"/>
+		
+			<classes>
+			    <class name="ViewletLevel.ViewletLevel_CreateViewletWithForm">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletWithAForm"/>
+                          <include name="ButtonsAndStatus"/> 
+                          <include name="RightSidePannel"/>  
+                          <include name="CreateViewletButton"/>                     
+                          <include name="Logout"/>    
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

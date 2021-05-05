@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Console page">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+		<parameter name="DashboardName" value="Console Options"/>
+		
+		<parameter name="ConsoleQuery" value="Get Event  where ProcessID between '10' and '100000'"/>
+		
+		<parameter name="Query" value="Get number of events show as table"/>
+		<parameter name="ViewletName" value="CreateViewlet4"/>
+		
+		<parameter name="NQuery" value="Get Events"/>
+		<parameter name="NewQuery" value="Get Activity"/>
+		
+			<classes>
+			    <class name="ViewletLevel.ViewletLevel_ConsolePage">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletforconsole"/>
+                          <include name="Console"/>     
+                          <include name="ConsoleViewletEditOption"/>  
+                          <include name="ConsoleViewletExportOption"/>   
+                          <include name="CheckOptionsStatusWithOutQueryforTemporaryViewlet"/> 
+                          <include name="EnterQueryIntoTemporaryViewletInTheConsolePage"/>
+                          <include name="CheckTemporaryViewletOptionsStatusWithQueryIntheConsolePage"/> 
+                          <include name="EditTempoararyViewletQueryIntheConsolePage"/> 
+                          <include name="TemporaryViewletRefreshOptionIntheConsolePage"/>
+                          <include name="TemporaryViewletEditOptionFromViewletMenuIntheConsolepage"/> 
+                          <include name="CloseButtonFuncationalityinTemporaryviewletEditPage"/>  
+                          <include name="PreviewButtonFuncationalityinTemporaryviewletEditPage"/>
+                          <include name="ApplyButtonFuncationalityinTemporaryviewletEditPage"/>  
+                          <include name="TemporaryViewletExportoptionFromMenubar"/> 
+                          <include name="movetoDashboard"/>
+                          <include name="TearOff"/>              
+                          <include name="Logout"/>   
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

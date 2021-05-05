@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Edit Viewlet Options">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+		<parameter name="DashboardName" value="EditViewlet"/>
+		
+		<parameter name="QueryBefore" value="get Event show as table"/>
+						
+		<parameter name="NewQuery" value="Get Activities show as table"/>
+		<parameter name="NewViewletName" value="SaveAsViewlet1"/>
+		
+		<parameter name="driver" value="driver"/>
+		
+			<classes>
+			    <class name="ViewletLevel.ViewletLevel_EditViewletOption">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletWithAForm"/>
+                          <include name="EditOptionInViewletMenu"/>
+                          <include name="EditviewletWindowOptions"/>  
+                          <include name="CloseButton"/>
+                          <include name="PreviewButton"/>
+                          <include name="ApplyButton"/>  
+                          <include name="SaveOption"/>
+                          <include name="SaveAsOption"/> 
+                          <include name="RemoveOption"/>   
+                          <include name="DeleteOption"/>
+                          <include name="ExportOption"/>
+                          <include name="shareviewlet"/>                   
+                          <include name="Logout"/>  
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

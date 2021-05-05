@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Open Exiting Viwewlet">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="OpenViewlet"/>
+		
+		<parameter name="ViewbyValue" value="Details"/>
+		<parameter name="SortOption" value="Alphabetically"/>
+		<parameter name="ViewbyValueBack" value="Icons"/>
+		
+		<parameter name="ValidChartName" value="Viewlet 2"/>
+		<parameter name="InValidChartName" value="TestInvalidChartName"/>
+		
+			<classes>
+			    <class name="ViewletLevel.ViewletLevel_ExistingViewlet">
+			       <methods>
+                          <include name="Login" />
+                          <include name="OpenExistingViewletPopup"/>
+                          <include name="AllOptionsStatus"/>
+                          <include name="ViewByFiletrDetailsOption"/> 
+                          <include name="SortByAlphabetically"/> 
+                          <include name="ValidSearch"/>
+                          <include name="InValidSearch"/>
+                          <include name="ButtonsStatus"/>
+                          <include name="OpenExistingViewlet"/>                    
+                          <include name="Logout"/>  
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

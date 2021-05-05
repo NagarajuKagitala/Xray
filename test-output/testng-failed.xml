@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Admin Settings]">
+  <test name="Branding Logos(failed)">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="Error" value="Wrong image dimensions!"/>
+    <parameter name="Title" value="IT Operational Analytics"/>
+    <parameter name="CollectorsURL" value="https://www.nastel.com/#collectors"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="AppLogoURL" value="https://www.nastel.com/nastel-Xray/"/>
+    <classes>
+      <class name="AdminSettings.AdminSettings_BrandingLogos">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="LicenseURL" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="ForgotPasswordURL" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- AdminSettings.AdminSettings_BrandingLogos -->
+    </classes>
+  </test> <!-- Branding Logos(failed) -->
+</suite> <!-- Failed suite [Admin Settings] -->

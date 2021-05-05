@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (7)]">
+  <parameter name="DashboardName" value="NewDashboard"/>
+  <parameter name="SaveasDashboardName" value="Save As Dashboard"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Dashboard page">
+    <parameter name="DashboardName" value="NewDashboard"/>
+    <parameter name="SaveasDashboardName" value="Save As Dashboard"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_Dashboard">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateDashboardFromMenubar"/>
+          <include name="SaveDashboardFromMenu"/>
+          <include name="SaveasDashboardFromMenu"/>
+          <include name="ChangeDashboardLayoutFromMenubar"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_Dashboard -->
+    </classes>
+  </test> <!-- Dashboard page -->
+  <test name="Dashboard page(failed)">
+    <parameter name="DashboardName" value="NewDashboard"/>
+    <parameter name="SaveasDashboardName" value="Save As Dashboard"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_Dashboard">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_Dashboard -->
+    </classes>
+  </test> <!-- Dashboard page(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (7)] -->

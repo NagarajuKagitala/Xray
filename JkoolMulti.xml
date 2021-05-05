@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Jkool Project">
+<suite-files>
+
+         <!--  <suite-file path="AdminSettings_Brandinglogos.xml"/>   
+          <suite-file path="AdminSettings_Set.xml"/>     -->
+          <!-- <suite-file path="AdminSettings_PermissionManager.xml"/> 
+          <suite-file path="AdminSettings_Alert.xml"/>    -->
+   <!--   <suite-file path="AdminSettings_Schemas.xml"/>   -->
+         <!--  <suite-file path="AdminSettings_ViewletTab.xml"/> 
+          <suite-file path="AdminSettings_Graph.xml"/>  
+    
+          <suite-file path="ViewletLevel_ViewletWithQuery.xml"/> 
+          <suite-file path="ViewletLevel_ViewletWithForm.xml"/>  
+          <suite-file path="ViewletLevel_ExistingViewlet.xml"/>
+          <suite-file path="ViewletLevel_EditViewletOptions.xml"/>  
+          <suite-file path="ViewletLevel_Consolepage.xml"/>      
+    
+          <suite-file path="SummaryViewlet_CreateBasicSummaryViewlet.xml"/>
+          <suite-file path="SummaryViewlet_CreateSummaryBasedOnObjectives.xml"/> 
+          <suite-file path="SummaryViewlet_OpenExistingSummary.xml"/>  
+  
+    
+           <suite-file path="Menubar_Viewlet.xml"/>  
+           <suite-file path="MenuBar_Dashboard.xml"/>   -->
+           <suite-file path="MenuBar_ImportAndExport.xml"/>  
+           <suite-file path="MenuBar_UserSettings.xml"/>  
+           <suite-file path="MenuBar_Landingpage.xml"/>
+           <suite-file path="MenuBar_Feedback.xml"/> 
+           <suite-file path="MenuBar_About.xml"/>   
+    
+          <!--  <suite-file path="EditViewletPage_EditViewletFilterOptions.xml"/> --> 
+           <suite-file path="dashbordOption.xml"/>       
+          
+</suite-files>
+</suite>

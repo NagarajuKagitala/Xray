@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (2)]">
+  <parameter name="ViewletName" value="CreateVielet4"/>
+  <parameter name="Query" value="Get Events"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="NewQuery" value="Get Activity"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+  <parameter name="JKQLQuery" value="get number of Event Show as table"/>
+  <parameter name="ConsoleQuery" value="Get Event  where ProcessID between &#039;10&#039; and &#039;100000&#039;"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Console page">
+    <parameter name="ViewletName" value="CreateVielet4"/>
+    <parameter name="Query" value="Get Events"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="NewQuery" value="Get Activity"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+    <parameter name="JKQLQuery" value="get number of Event Show as table"/>
+    <parameter name="ConsoleQuery" value="Get Event  where ProcessID between &#039;10&#039; and &#039;100000&#039;"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_ConsolePage">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateViewletforconsole"/>
+          <include name="Console"/>
+          <include name="ConsoleViewletEditOption"/>
+          <include name="ConsoleViewletExportOption"/>
+          <include name="CheckOptionsStatusWithOutQueryforTemporaryViewlet"/>
+          <include name="EnterQueryIntoTemporaryViewletInTheConsolePage"/>
+          <include name="CheckTemporaryViewletOptionsStatusWithQueryIntheConsolePage"/>
+          <include name="EditTempoararyViewletQueryIntheConsolePage"/>
+          <include name="TemporaryViewletRefreshOptionIntheConsolePage"/>
+          <include name="TemporaryViewletEditOptionFromViewletMenuIntheConsolepage"/>
+          <include name="CloseButtonFuncationalityinTemporaryviewletEditPage"/>
+          <include name="PreviewButtonFuncationalityinTemporaryviewletEditPage"/>
+          <include name="ApplyButtonFuncationalityinTemporaryviewletEditPage"/>
+          <include name="TemporaryViewletExportoptionFromMenubar"/>
+          <include name="movetoDashboard"/>
+          <include name="TearOff"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_ConsolePage -->
+    </classes>
+  </test> <!-- Console page -->
+  <test name="Console page(failed)">
+    <parameter name="ViewletName" value="CreateVielet4"/>
+    <parameter name="Query" value="Get Events"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="NewQuery" value="Get Activity"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+    <parameter name="JKQLQuery" value="get number of Event Show as table"/>
+    <parameter name="ConsoleQuery" value="Get Event  where ProcessID between &#039;10&#039; and &#039;100000&#039;"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_ConsolePage">
+        <methods>
+          <include name="TemporaryViewletExportoptionFromMenubar" invocation-numbers="0"/>
+          <include name="TearOff" invocation-numbers="0"/>
+          <include name="movetoDashboard" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="ConsoleViewletEditOption" invocation-numbers="0"/>
+          <include name="ConsoleViewletExportOption" invocation-numbers="0"/>
+          <include name="Logout"/>
+          <include name="beforeTest"/>
+          <include name="Console" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_ConsolePage -->
+    </classes>
+  </test> <!-- Console page(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (2)] -->

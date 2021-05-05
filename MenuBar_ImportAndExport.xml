@@ -1,0 +1,39 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="User Settings">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="Testing"/>
+		<parameter name="ImportedDashboardName" value="Open New Dashboard"/>
+		<parameter name="sExportedViewletName" value="Viewlet"/>
+		<parameter name="sExportedDashboardName" value="Test"/>
+		<parameter name="sExportedSetName" value="TestSet"/>
+		
+				
+			<classes>
+			    <class name="MenuBar.MenuBar_ImportAndExport">
+			       <methods>
+                          <include name="Login"/>
+                          <include name="OpenviewletWithExistingDashboard"/> 
+                          <include name="OpenviewletWithNewDashboard"/>      
+                          <include name="DeleteImportedDataFile"/>    
+                          <include name="ImportViewlet"/>      
+                          <include name="ExportViewlet"/>      
+                          <include name="ImportDashboard"/> 
+                          <include name="ExportDashboard"/>  
+                          <include name="ImportSet"/>   
+                          <include name="ExportSet"/>      
+                           <include name="Logout"/> 
+                         
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

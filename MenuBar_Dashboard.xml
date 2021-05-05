@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Dashboard page">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="NewDashboard"/>
+		<parameter name="SaveasDashboardName" value="Save As Dashboard"/>
+
+				
+			<classes>
+			    <class name="MenuBar.MenuBar_Dashboard">
+			       <methods>
+                          <include name="Login"/>
+                          <include name="CreateDashboardFromMenubar"/> 
+                          <include name="SaveDashboardFromMenu"/>   
+                          <include name="SaveasDashboardFromMenu"/>   
+                          <include name="ChangeDashboardLayoutFromMenubar"/>      
+                          <include name="Logout"/>   
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

@@ -1,0 +1,3 @@
+CFG, RelDates=true 
+HDR,Set,SetName,SetScope,Criteria,Objectives,SetSequence,UpdateTime,Options,SetType
+ROW,Set,"'event'","'RELATED'","'((EventName equals (\"statechange\"))) AND (StartTime between \"2019-09-24 11:50:00.000000 +05:30\" and  \"2019-09-24 12:55:00.000000 +05:30\")'","(S:'OnTime'='EndTime < \"2019-09-24 12:55:00.000000 +05:30\"')",,1569309700302979,,"('Activity','Event')",

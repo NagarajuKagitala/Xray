@@ -1,0 +1,21 @@
+<suite name="Admin Settings">
+        <test name="License">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="Licensesurl" value="http://www.jkoolcloud.com/signup/profile"/>
+		
+			<classes>
+			    <class name="AdminSettings.AdminSettings_Licence">
+			       <methods>
+                          <include name="Login" />
+                          <include name="LicenseFromSettings"/>                
+                          <include name="Logout"/>                                          
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite>  

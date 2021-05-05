@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+<test name="SmapleMFT">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-Middleware"/>                               
+        <parameter name="WgPolicyMgrMsg" value="EventName: StateChange,Severity: INFO,Events Count: 61864"/>
+        <parameter name="Last_xxx_PaichartMsg" value="EventName: StateChange,Severity: INFO,Events Count: 68949"/>
+        <parameter name="AutoPilot_Events_piechartMsg" value="EventName: StateChange,Severity: INFO,Events Count: 370"/>
+        
+            <classes>
+            
+                     <class name="GlobalRepositories.GlobalRepo_SampleMiddleware">
+                     
+                            <methods>
+                            
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                                      <include name="AutoPilot_Insight_for_DataPower_Anomalies"/> 
+                                     <!--  <include name="AutoPilot_Insight_for_DataPower_5_Worst_Events"/>
+                                      <include name="AutoPilot_Insight_for_DataPower_Alerts"/>
+                                      <include name="Viewlet88"/>
+                                      <include name="Viewlet93"/> -->
+                                    <!--   <include name="TODAY_Scorecard_Summary_AutoPilot_WorkGroup_Policy_Manager"/> -->
+                                     <!--  <include name="TODAY_Scorecard_AutoPilot_WorkGroup_Policy_Manager"/>
+                                      <include name="LAST_XXX_Scorecard_Summary_AutoPilot_WorkGroup_Policy_Manager"/>
+                                      <include name="LAST_XXX_Scorecard_AutoPilot_WorkGroup_Policy_Manager"/>
+                                      <include name="Application_Issues_Trading"/>
+                                      <include name="Queue_Anomalies"/>
+                                      <include name="Viewlet_188"/>
+                                      <include name="Performance_Issues_Forex"/>
+                                      <include name="Application_Issues_Forex_Loan"/>
+                                      <include name="Application_Issues_OTC"/> 
+                                      <include name="Missed_SLA_Transactions"/>
+                                      <include name="WebLogic_Scorecard"/>
+                                      <include name="WAS_Scorecard"/>
+                                      <include name="JBoss_Issues"/>
+                                      <include name="WebLogic_Anomaly_Chart"/>
+                                      <include name="WAS_Issues"/>
+                                      <include name="JBoss_Scorecard"/>
+                                      <include name="WAS_Anomaly_Chart"/>
+                                      <include name="JBoss_Anomaly_Chart"/>
+                                      <include name="WebLogic_CPU_Warnings"/>
+                                      <include name="WAS_HeapSize"/>
+                                      <include name="JBoss_HeapSize"/>
+                                      <include name="WebLogic_Errors_Stackchart"/>
+                                      <include name="WAS_CPU_Warnings"/>
+                                      <include name="JBoss_CPU_Warnings"/>
+                                      <include name="WAS_Errors_Stackchart"/>
+                                      <include name="Viewlet_42"/> -->
+                                   <!--    <include name="DP_Order_Workflow_Transaction_Volume"/> -->
+                                     <!--  <include name="Order_Workflow_Scorecard"/>
+                                      <include name="DP_Order_Workflow_Events"/>
+                                      <include name="DP_Transaction_Details"/>
+                                      <include name="DP_Transactions_Events_Stackchart"/> -->
+                                      <!-- <include name="DP_Transactions_Events_Linechart"/> -->
+                                     <!--  <include name="DP_OrderWorkflow_Transaction_Volume"/>
+                                      <include name="Logout"/> -->
+                                                                        
+                                         
+                            </methods>
+
+                      </class>
+
+           </classes>
+
+    </test>
+
+</suite>

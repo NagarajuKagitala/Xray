@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleBanking">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-Banking"/>
+        <parameter name="AD_HOCK_Transaction_Analysis_Query" value="get events fields EventName, Starttime, Endtime, Message, Correlator, ResourceName , applname, parentid for latest 20 minutes order by starttime asc"/>
+        <parameter name="BarChartTooltipMsg" value="ApplName: OFAC/BSA Screening,Events Count: 2664"/>
+
+            <classes>
+
+                  <class name="GlobalRepositories.GlobalRepo_SampleBanking">
+                      <methods>
+
+                              <include name="Login"/>
+                              <include name="SelectRepositories"/>
+                              <include name="Business_View_Summary"/>
+                              <include name="Business_View_Summary_Counts"/>
+                              <include name="complete_activities"/>
+                              <include name="complete_activities_ConsoleCounts"/>
+                              <include name="SLA_Violations"/>                       
+                              <include name="SLA_Violations_consoleCounts"/>                                                                                                                               
+                              <!--  <include name="Viewlet_3"/> -->
+                              <include name="Treasury_market_summary_viewlet"/>
+                              <include name="Treasury_market_SLA_Violations"/>      
+                              <include name="Treasury_market_Message_Volume"/>
+                              <include name="counterparty_SLA"/>                                                                                     
+                              <include name="ReconcileSummary"/> 
+                              <include name="Transaction_Tracking_Summary"/>                            
+                              <include name="Payment_in_Progress"/>
+                              <include name="AD_HOCK_Transaction_Analysis"/>
+                              <include name="Busines_step"/>
+                              <include name="AD_HOCK_Transaction_Analysis2"/> 
+                              <include name="failed_transaction"/> 
+                              <include name="send_recive_message_countByapp_recon"/> 
+                              <include name="list_ofLong_running_operation"/>  
+                           <!--    <include name="Logout"/>  --> 
+  
+                    </methods>
+
+            </class>
+
+        </classes>
+
+  </test>
+
+</suite>

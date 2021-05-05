@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Admin Settings (4)]">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <parameter name="Licensesurl" value="https://www.nastel.com/"/>
+  <test name="License">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="Licensesurl" value="https://www.nastel.com/"/>
+    <classes>
+      <class name="AdminSettings.AdminSettings_Licence">
+        <methods>
+          <include name="Login"/>
+          <include name="LicenseFromSettings"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- AdminSettings.AdminSettings_Licence -->
+    </classes>
+  </test> <!-- License -->
+  <test name="License(failed)">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="Licensesurl" value="https://www.nastel.com/"/>
+    <classes>
+      <class name="AdminSettings.AdminSettings_Licence">
+        <methods>
+          <include name="LicenseFromSettings" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- AdminSettings.AdminSettings_Licence -->
+    </classes>
+  </test> <!-- License(failed) -->
+</suite> <!-- Failed suite [Admin Settings (4)] -->

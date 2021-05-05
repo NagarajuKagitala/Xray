@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Open Existing Summary viewlet">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="OpenExistingSummary"/>
+		
+		<parameter name="DataType" value="Activities"/>
+		<parameter name="ViewbyValue" value="Details"/>
+		<parameter name="SortOption" value="Alphabetically"/>
+		<parameter name="ViewbyValueBack" value="Icons"/>
+				
+		<parameter name="ValidChartName" value="Activity Count"/>
+		
+			<classes>
+			    <class name="SummaryViewlets.SummaryViewlet_OpenExistingSummary">
+			       <methods>
+                          <include name="Login" />
+                          <include name="SelectOpenExistingSummary"/>
+                          <include name="AllOptionsStatus"/>
+                          <include name="ViewByFiletrDetailsOption"/> 
+                          <include name="SortByAlphabetically"/> 
+                          <include name="ValidSearch"/>
+                          <include name="ButtonsStatus"/>
+                          <include name="OpenExistingSummaryViewlet"/>                     
+                          <include name="Logout"/> 
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

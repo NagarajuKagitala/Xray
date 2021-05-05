@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Admin Settings">
+        <test name="Branding Logos">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="Error" value="Wrong image dimensions!"/>
+		
+		<parameter name="AppLogoURL" value="https://www.nastel.com/nastel-Xray/"/>
+		<parameter name="CollectorsURL" value="https://www.nastel.com/#collectors"/>
+		<parameter name="Title" value="IT Operational Analytics"/>
+		
+		
+			<classes>
+			    <class name="AdminSettings.AdminSettings_BrandingLogos">
+			       <methods>
+			              <include name="Browser"/>
+                          <include name="Login" />
+                          <include name="Faviconlogo"/>
+                          <include name="Loginlogo"/>
+                          <include name="Applogo"/> 
+                          <include name="AppLogoLinkURL"/>  
+                         
+                          <include name="RegistrationTextCheckbox"/>
+                          <include name="RegistrationText"/> 
+                          <include name="RegistrationURL"/>
+                          <include name="TermsOfServiceURL"/>
+                          <include name="PrivacyURL"/>
+                          <include name="ForgotPasswordURL"/>
+                          <include name="CopyRight"/>      
+                          
+                          <include name="LandingPageText"/>   
+                          
+                          <include name="LicenseURLCheckbox"/>
+                          <include name="HelpURL"/>
+                          <include name="LeaveFeedback"/>
+                          <include name="CollectorsURL"/>
+                          <include name="LicenseURL"/>    
+                          
+                          <include name="Logoutmessage"/>  
+                          
+                          
+                          <!-- <include name="DefaultNastelvaluesCheckbox"/> 
+                          <include name="LoginPageDefaultValuesCheckbox"/>
+                          <include name="LandingPageDefaultChechbox"/>
+                          <include name="IndexPageDefaultChechbox"/>
+                          <include name="LogoutPageDefaultChechbox"/>  -->
+                                      
+                           <include name="Closebrowser"/>                                     
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite>  

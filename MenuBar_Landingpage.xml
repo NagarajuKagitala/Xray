@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Landing page">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+			<classes>
+			    <class name="MenuBar.MenuBar_LandingPage">
+			       <methods>
+                          <include name="Login" />
+                          <include name="LandingPageVerification"/>            
+                          <include name="Logout"/> 
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

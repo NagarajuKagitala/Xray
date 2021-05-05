@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+<test name="SmapleMFT">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-MFT"/>                 
+        <parameter name="MFT_PerformanceMsg" value="ActivityName: ArrivedFileDescription_TO_DeliveredMailboxMessage,Min(ElapsedTime): 3?s,Max(ElapsedTime): 3s 396ms,Avg(ElapsedTime): 3s 396ms,Activities Count: 1"/>  
+        <parameter name="Recent_TransfersMSG" value="ApplName: FirstStatic,StartTime: Range between 10/19/2017, 12:00:00 AM and 10/20/2017, 12:00:00 AM,Activities Count: 1"/>
+                
+            <classes>
+            
+                     <class name="GlobalRepositories.GlobalRepo_SmapleMFT">
+                     
+                            <methods>
+                            
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>                                  
+                                      <include name="MFTSupport_FileSearch"/>                                     
+                                      <include name="File_Transfer_Tracking_Details"/>                                      
+                                      <include name="MFT_Environment_ResourceSummary"/>                                      
+                                      <include name="MFT_Environment_FileSummary"/>                                
+                                      <include name="MFT_Environment_MFT_Objectives"/>                                     
+                                      <include name="MFT_Environment_MFT_By_Source_Agent"/>                                      
+                                      <include name="MFT_Environment_File_Status_By_Source"/>                                     
+                                      <include name="MFT_Environment_File_Status_By_Destination"/>                                    
+                                      <include name="MFT_Environment_MFT_By_Destination"/>                                     
+                                      <include name="MFT_Environment_MFT_Event_Summary"/>                                    
+                                      <include name="MFT_Environment_MFT_Performance_Scorecard"/>                                  
+                                      <include name="MFT_Environment_Test"/>                                   
+                                      <include name="MFT_Tracking_MFT_Summary"/>                                     
+                                      <include name="Events_Activity_Details"/>                                    
+                                      <include name="MFT_By_Destination"/>                                     
+                                      <include name="MFT_By_Source_Agent"/>                                     
+                                      <include name="File_Status_By_Destination"/>                                     
+                                      <include name="File_Status_By_Source"/>                                   
+                                      <include name="Failed_Transfers"/>                                    
+                                      <include name="MFT_Performance"/>                                    
+                                      <include name="SuccessfulTransfers2"/>                                   
+                                      <include name="MFT_Event_Summary"/>                                     
+                                      <include name="Recent_Transfers"/>                                     
+                                      <include name="MFT_sets"/>                                   
+                                      <include name="List_of_Successful_transfers"/>                                      
+                                      <include name="Ad_Hoc_Job_Inqiries"/>                                   
+                                      <include name="List_Received_Xfer_Files"/>                                    
+                                      <include name="Activities_Missed_Business_Objectives"/>                                    
+                                      <include name="Tracking_List_File_Xfers_by_Producer_Sender"/>                                   
+                                      <include name="Tracking_Xfer_Load_by_Application"/>                                     
+                                      <include name="Total_MFT_Summary"/>                                     
+                                      <include name="MFT_Business_MFT_Performance_Scorecard"/>                                     
+                                      <include name="Locate_Files"/>                                     
+                                      <include name="Logout"/>                                       
+                                                                                                     
+                            </methods>
+
+                      </class>
+
+           </classes>
+
+    </test>
+
+</suite>

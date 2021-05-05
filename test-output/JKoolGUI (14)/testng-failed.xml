@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (14)]">
+  <parameter name="DashboardName" value="Test"/>
+  <parameter name="SaveAsDashboardname" value="SaveAsTest"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="SchemaName" value="SchemaConfigure"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Dashboard option">
+    <parameter name="DashboardName" value="Test"/>
+    <parameter name="SaveAsDashboardname" value="SaveAsTest"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="SchemaName" value="SchemaConfigure"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="DashBoardOption.dashbordOption">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateDashboardandViewlet"/>
+          <include name="saveDashboard"/>
+          <include name="SaveAs"/>
+          <include name="Configure"/>
+          <include name="SetDefultDashborad"/>
+          <include name="closeTabOftheRight"/>
+          <include name="closeTabOftheLeft"/>
+          <include name="closeAllTab"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- DashBoardOption.dashbordOption -->
+    </classes>
+  </test> <!-- Dashboard option -->
+  <test name="Dashboard option(failed)">
+    <parameter name="DashboardName" value="Test"/>
+    <parameter name="SaveAsDashboardname" value="SaveAsTest"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="SchemaName" value="SchemaConfigure"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="DashBoardOption.dashbordOption">
+        <methods>
+          <include name="SaveAs" invocation-numbers="0"/>
+          <include name="Configure" invocation-numbers="0"/>
+          <include name="saveDashboard" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="closeTabOftheRight" invocation-numbers="0"/>
+          <include name="SetDefultDashborad" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- DashBoardOption.dashbordOption -->
+    </classes>
+  </test> <!-- Dashboard option(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (14)] -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Admin Settings (0)]">
+  <parameter name="DashboardName" value="ViewletsTabOptions"/>
+  <parameter name="Query" value="Get number of events show as table"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="SummaryQuery" value="Get number of Activity group by ActivityName, severity, starttime bucketed by 10days show as summary"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Viewlet tab">
+    <parameter name="DashboardName" value="ViewletsTabOptions"/>
+    <parameter name="Query" value="Get number of events show as table"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="SummaryQuery" value="Get number of Activity group by ActivityName, severity, starttime bucketed by 10days show as summary"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="AdminSettings.AdminSettings_ViewletTab">
+        <methods>
+          <include name="Login"/>
+          <include name="DataPointsforViewlet"/>
+          <include name="DataGroupsforSummaryViewlet"/>
+          <include name="Reset"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- AdminSettings.AdminSettings_ViewletTab -->
+    </classes>
+  </test> <!-- Viewlet tab -->
+</suite> <!-- Failed suite [Admin Settings (0)] -->

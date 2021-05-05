@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI]">
+  <test name="User Settings(failed)">
+    <parameter name="Query" value="Get number of Events show as summary"/>
+    <parameter name="DefaultRepository" value="TestRepo001$Nastel"/>
+    <parameter name="ItemType" value="Event"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="userpwd" value="pwd1"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="usernewpwd" value="pwd2"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="NewDashboardName" value="UpdatedConfigDashboard"/>
+    <parameter name="Newusername" value="UserQ"/>
+    <parameter name="NewField" value="Correlator"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="OldDashboardName" value="ConfigDashboard"/>
+    <parameter name="SchemaName" value="NewEventSchema"/>
+    <classes>
+      <class name="MenuBar.MenuBar_UserSettings">
+        <methods>
+          <include name="PersonalToken" invocation-numbers="0"/>
+          <include name="CloseBrowser"/>
+          <include name="beforeTest"/>
+          <include name="DefaultRepository" invocation-numbers="0"/>
+          <include name="Logout"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_UserSettings -->
+    </classes>
+  </test> <!-- User Settings(failed) -->
+</suite> <!-- Failed suite [JKoolGUI] -->

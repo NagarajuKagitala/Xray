@@ -1,0 +1,54 @@
+<suite name="Admin Settings">
+        <test name="Alerts tab">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="AlertName" value="AlertTest02"/>
+		<parameter name="ActionName" value="Test Action02"/>
+		<parameter name="UserName" value="psuryawanshi@nastel.com"/>
+		<parameter name="Password" value="ps@nas123"/>
+		<parameter name="MailServer" value="west.exch031.serverdata.net"/>
+		<parameter name="PortNumber" value="25"/> 
+		<parameter name="MailFrom" value="psuryawanshi@nastel.com"/>
+		<parameter name="MailTo" value="prashant.suryawanshi@pittsburgh-technologies.com"/>
+		<parameter name="AlertName1" value="Alert2"/>
+		
+		<parameter name="ActionNameinCreatePage" value="NewAction2"/>
+		
+		<parameter name="AlertNames" value="Test Alert2"/>
+		<parameter name="SearchAction" value="Testing Alert2"/>
+		
+		
+		
+		 <classes>
+			    <class name="AdminSettings.AdminSettings_AlertsTab">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateAlert"/>
+                          <include name="ActionTypeCheckboxInAlertTab"/>
+                          <include name="BrowseAvailablePlaceholderLinkInAlertTab"/>
+                          <include name="SetDefaultValuesInAlertTab"/>
+                          <include name="TestAndFinishButtonsVerificationBeforEnterTheName"/>
+                          <include name="TestAndFinishButtonsVerificationAfterEnterTheName"/>
+                          
+                          <include name="TestButtonFunctionalityVerification"/>
+                          <include name="CreateButtonFunctinalityVerification"/>
+                          
+                          <include name="SerachInManageActionsTab"/>
+                          <include name="EditAction"/>
+                          <include name="CopyAction"/>
+                          <include name="DeleteAction"/> 
+                          
+                          <include name="SearchInManageAlertsTab"/>
+                          <include name="EditAlert"/>
+                          <include name="DeleteAlert"/> 
+                                                           
+                          <include name="Logout"/>                                          
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite> 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (10)]">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Landing page">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_LandingPage">
+        <methods>
+          <include name="Login"/>
+          <include name="LandingPageVerification"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_LandingPage -->
+    </classes>
+  </test> <!-- Landing page -->
+  <test name="Landing page(failed)">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_LandingPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="beforeTest"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_LandingPage -->
+    </classes>
+  </test> <!-- Landing page(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (10)] -->

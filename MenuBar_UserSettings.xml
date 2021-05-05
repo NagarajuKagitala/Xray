@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="User Settings">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="Newusername" value="UserQ"/>
+		<parameter name="userpwd" value="pwd1"/>
+		<parameter name="usernewpwd" value="pwd2"/>
+		
+		<parameter name="OldDashboardName" value="ConfigDashboard"/>
+		<parameter name="NewDashboardName" value="UpdatedConfigDashboard"/>
+		
+		<parameter name="Query" value="Get number of Events show as summary"/>
+		
+		<parameter name="DefaultRepository" value="TestRepo001$Nastel"/>
+		
+		<parameter name="SchemaName" value="NewEventSchema"/>
+		<parameter name="ItemType" value="Event"/>
+		<parameter name="NewField" value="Correlator"/>
+				
+			<classes>
+			    <class name="MenuBar.MenuBar_UserSettings">
+			       <methods>
+                          <include name="Login"/>
+                        <!--   <include name="ChangePasswordFromMenu"/>     -->
+                          <include name="UpdateDashboardNameFromConfigureDashboard"/>    
+                          <include name="DeleteDashboardFromConfigureDashboard"/>    
+                          <include name="SummaryConsoleCheckboxes"/> 
+                          <include name="LandingPageCheckboxes"/>  
+                          <include name="CreateSchema"/>
+                          <include name="EditSchema"/>
+                          <include name="DeleteSchema"/> 
+                          <include name="DefaultRepository"/> 
+                          <include name="PersonalToken"/>           
+                          <include name="Logout"/> 
+                                                                                          
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

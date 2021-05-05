@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite (0)]">
+  <parameter name="Query" value="Get number of Event where Severity =&#039;INFO&#039; group by Severity order by Severity show as piechart"/>
+  <parameter name="sDriver" value="webdriver.gecko.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Chrome" preserve-order="false">
+    <parameter name="Query" value="Get number of Event where Severity =&#039;INFO&#039; group by Severity order by Severity show as piechart"/>
+    <parameter name="sDriver" value="webdriver.gecko.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="AdminSettings.AdminSettings_Graph">
+        <methods>
+          <include name="Login"/>
+          <include name="OpenGraphSettings"/>
+          <include name="CheckSeveritySettings"/>
+          <include name="ChangeSeveritySettings"/>
+          <include name="ChangeSeveritybyStandardcolor"/>
+          <include name="ChangeSeveritybyWebcolor"/>
+          <include name="VerifyHistorySeverity"/>
+          <include name="VerifyBackSeverity"/>
+          <include name="VerifyCanselSeverity"/>
+          <include name="VerifyResetSeverity"/>
+          <include name="CancelGraphSettings"/>
+          <include name="CheckSeverityHexValue"/>
+          <include name="CheckSeveritySelectedHexValue"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- AdminSettings.AdminSettings_Graph -->
+    </classes>
+  </test> <!-- Chrome -->
+</suite> <!-- Failed suite [Suite (0)] -->

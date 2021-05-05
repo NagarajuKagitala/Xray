@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (3)]">
+  <parameter name="ViewletName" value="Test"/>
+  <parameter name="Query" value="Get count of Activity Show as summary"/>
+  <parameter name="NewQuery" value="Get count of Event Show as summary"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="ConsoleQuery" value="Get Activity  "/>
+  <parameter name="TemporaryQuery" value="Get Events"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <parameter name="sDriver" value="webdriver.gecko.driver"/>
+  <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+  <parameter name="TempVielwetName" value="Temporary viewlet"/>
+  <parameter name="NewViewletName" value="TestUpdate"/>
+  <parameter name="SaveAsViewletName" value="UpdatedSummary"/>
+  <test name="Basic summary viewlet">
+    <parameter name="ViewletName" value="Test"/>
+    <parameter name="Query" value="Get count of Activity Show as summary"/>
+    <parameter name="NewQuery" value="Get count of Event Show as summary"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ConsoleQuery" value="Get Activity  "/>
+    <parameter name="TemporaryQuery" value="Get Events"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="sDriver" value="webdriver.gecko.driver"/>
+    <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+    <parameter name="TempVielwetName" value="Temporary viewlet"/>
+    <parameter name="NewViewletName" value="TestUpdate"/>
+    <parameter name="SaveAsViewletName" value="UpdatedSummary"/>
+    <classes>
+      <class name="SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateSummaryViewlet"/>
+          <include name="VerifyRecordsCount"/>
+          <include name="ObservationOfQuery"/>
+          <include name="TemporaryViewlet"/>
+          <include name="QueryInTemporaryViewlet"/>
+          <include name="ConsoleTabFunctionality"/>
+          <include name="EditSummaryViewletQuery"/>
+          <include name="EditOptionInSummaryViewlet"/>
+          <include name="SaveSummaryViewlet"/>
+          <include name="SaveASSummaryViewlet"/>
+          <include name="RemoveSummaryViewlet"/>
+          <include name="DeleteSummaryViewlet"/>
+          <include name="ExportSummaryViewlet"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet -->
+    </classes>
+  </test> <!-- Basic summary viewlet -->
+  <test name="Basic summary viewlet(failed)">
+    <parameter name="ViewletName" value="Test"/>
+    <parameter name="Query" value="Get count of Activity Show as summary"/>
+    <parameter name="NewQuery" value="Get count of Event Show as summary"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ConsoleQuery" value="Get Activity  "/>
+    <parameter name="TemporaryQuery" value="Get Events"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="sDriver" value="webdriver.gecko.driver"/>
+    <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+    <parameter name="TempVielwetName" value="Temporary viewlet"/>
+    <parameter name="NewViewletName" value="TestUpdate"/>
+    <parameter name="SaveAsViewletName" value="UpdatedSummary"/>
+    <classes>
+      <class name="SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet">
+        <methods>
+          <include name="Logout"/>
+          <include name="VerifyRecordsCount" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="RemoveSummaryViewlet"/>
+          <include name="SaveASSummaryViewlet"/>
+          <include name="SaveSummaryViewlet"/>
+          <include name="tearDown"/>
+          <include name="DeleteSummaryViewlet"/>
+          <include name="ExportSummaryViewlet" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet -->
+    </classes>
+  </test> <!-- Basic summary viewlet(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (3)] -->

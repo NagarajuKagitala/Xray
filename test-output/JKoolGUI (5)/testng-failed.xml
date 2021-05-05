@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (5)]">
+  <parameter name="ViewbyValue" value="Details"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="SortOption" value="Alphabetically"/>
+  <parameter name="ViewbyValueBack" value="Icons"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="DataType" value="Activities"/>
+  <parameter name="ValidChartName" value="Activity Count"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Open Existing Summary viewlet">
+    <parameter name="ViewbyValue" value="Details"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="SortOption" value="Alphabetically"/>
+    <parameter name="ViewbyValueBack" value="Icons"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DataType" value="Activities"/>
+    <parameter name="ValidChartName" value="Activity Count"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="SummaryViewlets.SummaryViewlet_OpenExistingSummary">
+        <methods>
+          <include name="Login"/>
+          <include name="SelectOpenExistingSummary"/>
+          <include name="AllOptionsStatus"/>
+          <include name="ViewByFiletrDetailsOption"/>
+          <include name="SortByAlphabetically"/>
+          <include name="ValidSearch"/>
+          <include name="ButtonsStatus"/>
+          <include name="OpenExistingSummaryViewlet"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- SummaryViewlets.SummaryViewlet_OpenExistingSummary -->
+    </classes>
+  </test> <!-- Open Existing Summary viewlet -->
+</suite> <!-- Failed suite [JKoolGUI (5)] -->

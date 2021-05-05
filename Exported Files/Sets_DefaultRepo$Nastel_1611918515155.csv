@@ -1,0 +1,3 @@
+CFG,RelDates=false
+HDR,Set,SetName,SetScope,Criteria,Objectives,SetSequence,UpdateTime,Options
+ROW,Set,'TestSet','RELATED',"'((ResourceName contains (""TESTQ1"")))'",,,1602783776571085,

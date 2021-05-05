@@ -1,0 +1,26 @@
+<suite name="Admin Settings">
+        <test name="Viewlet tab">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="ViewletsTabOptions"/>
+		<parameter name="Query" value="Get number of events show as table"/>
+		<parameter name="SummaryQuery" value="Get number of Activity group by ActivityName, severity, starttime bucketed by 10days show as summary"/>
+		
+		 <classes>
+			    <class name="AdminSettings.AdminSettings_ViewletTab">
+			       <methods>
+                          <include name="Login" />
+                           <include name="DataPointsforViewlet"/>  
+                           <include name="DataGroupsforSummaryViewlet"/>
+                           <include name="Reset"/>   
+                                                                
+                          <include name="Logout"/>                                           
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite> 

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+    <test name="SampleEUM">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-EUM"/>
+        
+            <classes>
+
+                     <class name="GlobalRepositories.GlobalRepo_SampleEUM">
+
+                            <methods>
+
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                                    <!--   <include name="Event_count_summary"/>           
+                                      <include name="Event_count_console"/>                                    
+                                      <include name="SnapSot_Summary_count"/>                                     
+                                      <include name="Snapshot_Console_count"/>                                    
+                                      <include name="Activity_count"/>                                    
+                                      <include name="Activity_Console_count"/>                                    
+                                      <include name="Event_severity"/>                                 
+                                      <include name="Event_Scorecard"/>                      
+                                      <include name="All_Events"/>                                     
+                                      <include name="AnomalyMoniter"/>                                   
+                                      <include name="EventSeverityTOPOLOGY_CHART_LEVEL"/>                               
+                                      <include name="Event_Stackchart"/>                                  
+                                      <include name="Event_By_the_hour"/>                                   
+                                      <include name="The_10_worst_Events"/>                                     
+                                      <include name="EUM_Breakdown_summary"/>                                    
+                                      <include name="EUM_Breakdown_consoleCount"/>                                    
+                                      <include name="Activities_By_country"/>                                     
+                                      <include name="Activities_By_country_consoleCount"/>                                      
+                                      <include name="Events_By_country"/>                                     
+                                      <include name="Events_By_country_consoleCount"/>  -->                                    
+                                      <include name="Popular_Browsers"/>  
+                                    <!--    <include name="Event_Scorecard_DemoDashbord"/>  -->
+                                                                          
+                                     <!--  <include name="Logout"/> -->
+                                                                     
+                            </methods>
+                      </class>
+           </classes>
+
+    </test>
+
+</suite>

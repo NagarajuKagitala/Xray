@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Dashboard option">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="TestDashboard"/>
+		<parameter name="Query" value="get Activity"/>
+		<parameter name="ViewletName" value="TestViewlet"/>
+		<parameter name="SaveAsDashboardname" value="SaveAsTest"/>
+		<parameter name="SchemaName" value="SchemaConfigure"/>
+		
+		
+
+				
+			<classes>
+			    <class name="DashBoardOption.dashbordOption">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateDashboardandViewlet"/>  
+                          <include name="saveDashboard"/>   
+                          <include name="SaveAs"/>    
+                          <include name="Configure"/>
+                          <include name="SetDefultDashborad"/>
+                          <include name="closeTabOftheRight"/> 
+                        <!--  <include name="closeTabOftheLeft"/> 
+                          <include name="closeAllTab"/> -->  
+                          <include name="Logout"/>    
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

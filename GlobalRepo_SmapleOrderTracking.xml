@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+<test name="SmapleOrderTracking">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-OrderTracking"/>
+        
+            <classes>
+            
+                     <class name="GlobalRepositories.GlobalRepo_SmapleOrderTracking">
+                     
+                            <methods>
+                            
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                                     <!--   <include name="Summary_of_the_Order_Process_Flow_for_Latest_Week"/>
+                                      <include name="test_it_Summary"/> 
+                                       <include name="ActivtyScorecard_Latest_Week"/>  
+                                       <include name="Orders_for_the_Last_Hour_that_missed_their_SLA"/>  
+                                      <include name="Credit_Validation_Exceptions"/> 
+                                      <include name="Events_for_Latest_Hour_by_Location"/>
+                                      <include name="Application_Performance_Index_Analytics"/>     -->                                
+                                     <!--  <include name="SLA_Violation_Scorecard"/> 
+                                      <include name="Elapsed_Time_for_Order_Events"/> 
+                                      <include name="Activities_by_Application"/> -->                                     
+                                      <include name="Exponential_Moving_Average_for_ElapsedTime"/>                                    
+                                      <!--  <include name="StdDev_Elapsed_Time_for_Activities"/>                                     
+                                       <include name="Anomaly_Monitor"/>     
+                                      <include name="Appdex_Zones"/>  
+                                      <include name="Function_Analysis_viewlet"/>    
+                                      <include name="Histogram_of_Recent_Events_viewlet"/>
+                                       <include name="Revenue_over_Time_viewlet"/>                                          
+                                      <include name="Activity_Distribution"/>                                      
+                                      <include name="Logout"/>        -->                            
+                                                                         
+                            </methods>
+
+                      </class>
+
+           </classes>
+
+    </test>
+
+</suite>                                                 
+                                                                         
+                         

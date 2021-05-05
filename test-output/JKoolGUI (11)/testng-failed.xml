@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (11)]">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="Contacturl" value="https://www.surveymonkey.com/r/9GCK7C3"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Feed back page">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="Contacturl" value="https://www.surveymonkey.com/r/9GCK7C3"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_FeedBack">
+        <methods>
+          <include name="Login"/>
+          <include name="FeedbackVerification"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_FeedBack -->
+    </classes>
+  </test> <!-- Feed back page -->
+</suite> <!-- Failed suite [JKoolGUI (11)] -->

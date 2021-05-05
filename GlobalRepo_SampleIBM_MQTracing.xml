@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleIBM_MQ_Tracing">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-IBM_MQ_Tracing"/>
+       
+
+            <classes>
+
+                  <class name="GlobalRepositories.GlobalRepo_SampleIBM_MQTracing">
+                      <methods>
+
+                              <include name="Login"/>
+                              <include name="SelectRepositories"/>
+                            <!--   <include name="MQ_calls_by_type"/> 
+                              <include name="MQ_object_breakdown"/>
+                              <include name="Persistance_Percentages"/>-->
+                              <include name="MQ_calls_over_time"/> 
+                             <!--  <include name="MQ_calls_by_Appplliction"/>  
+                              <include name="MQ_callsBy_complation_code"/>
+                              <include name="MQ_exception_list"/>    
+                               <include name="Sampling_Success"/>
+                              <include name="Sampling_Failure"/>  
+                              <include name="Logout"/>       -->                  
+                              
+  
+                    </methods>
+
+            </class>
+
+        </classes>
+
+  </test>
+
+</suite>

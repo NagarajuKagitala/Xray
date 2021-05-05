@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (0)]">
+  <parameter name="ViewbyValue" value="Details"/>
+  <parameter name="InValidChartName" value="TestInvalidChartName"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="SortOption" value="Alphabetically"/>
+  <parameter name="ViewbyValueBack" value="Icons"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="ValidChartName" value="Viewlet 2"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Open Exiting Viwewlet">
+    <parameter name="ViewbyValue" value="Details"/>
+    <parameter name="InValidChartName" value="TestInvalidChartName"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="SortOption" value="Alphabetically"/>
+    <parameter name="ViewbyValueBack" value="Icons"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ValidChartName" value="Viewlet 2"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_ExistingViewlet">
+        <methods>
+          <include name="Login"/>
+          <include name="OpenExistingViewletPopup"/>
+          <include name="AllOptionsStatus"/>
+          <include name="ViewByFiletrDetailsOption"/>
+          <include name="SortByAlphabetically"/>
+          <include name="ValidSearch"/>
+          <include name="InValidSearch"/>
+          <include name="ButtonsStatus"/>
+          <include name="OpenExistingViewlet"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_ExistingViewlet -->
+    </classes>
+  </test> <!-- Open Exiting Viwewlet -->
+  <test name="Open Exiting Viwewlet(failed)">
+    <parameter name="ViewbyValue" value="Details"/>
+    <parameter name="InValidChartName" value="TestInvalidChartName"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="SortOption" value="Alphabetically"/>
+    <parameter name="ViewbyValueBack" value="Icons"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ValidChartName" value="Viewlet 2"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_ExistingViewlet">
+        <methods>
+          <include name="OpenExistingViewlet" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_ExistingViewlet -->
+    </classes>
+  </test> <!-- Open Exiting Viwewlet(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (0)] -->

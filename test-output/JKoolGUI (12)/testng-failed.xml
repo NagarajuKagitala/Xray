@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (12)]">
+  <parameter name="sDriver" value="webdriver.gecko.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="Collectorsurl" value="https://www.jkoolcloud.com/product/technology/#Connectors"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <parameter name="Licensesurl" value="http://www.jkoolcloud.com/signup/profile"/>
+  <test name="About page">
+    <parameter name="sDriver" value="webdriver.gecko.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/geckodriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="Collectorsurl" value="https://www.jkoolcloud.com/product/technology/#Connectors"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <parameter name="Licensesurl" value="http://www.jkoolcloud.com/signup/profile"/>
+    <classes>
+      <class name="MenuBar.MenuBar_About">
+        <methods>
+          <include name="Login"/>
+          <include name="AboutVerification"/>
+          <include name="GetCollectorsFromSettings"/>
+          <include name="LicenseFromSettings"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_About -->
+    </classes>
+  </test> <!-- About page -->
+</suite> <!-- Failed suite [JKoolGUI (12)] -->

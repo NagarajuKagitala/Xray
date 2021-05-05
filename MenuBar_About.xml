@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="About page">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<!-- <parameter name="Collectorsurl"  value="https://www.jkoolcloud.com/product/technology/#Connectors"/> -->
+		<parameter name="Licensesurl"  value="http://www.jkoolcloud.com/signup/profile"/>
+		<parameter name="Collectorsurl" value="https://www.nastel.com/#collectors"/>
+
+				
+			<classes>
+			    <class name="MenuBar.MenuBar_About">
+			       <methods>
+                          <include name="Login" />
+                          <include name="AboutVerification"/>  
+                          <include name="GetCollectorsFromSettings"/>   
+                          <include name="LicenseFromSettings"/>    
+                          <include name="Logout"/>  
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

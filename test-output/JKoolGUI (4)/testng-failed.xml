@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (4)]">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="DataType" value="event"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Summary viewlet Based on Objectives ">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DataType" value="event"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="SummaryViewlets.SummaryViewlet_CreateSummaryBasedOnObjectives">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateSummaryViewletBasedOnObjectives"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- SummaryViewlets.SummaryViewlet_CreateSummaryBasedOnObjectives -->
+    </classes>
+  </test> <!-- Summary viewlet Based on Objectives  -->
+</suite> <!-- Failed suite [JKoolGUI (4)] -->

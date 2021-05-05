@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (8)]">
+  <parameter name="DashbaordNameAs" value="Testing"/>
+  <parameter name="sExportedSetName" value="event"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sExportedViewletName" value="Viewlet"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="ImportedDashboardName" value="Open New Dashboard"/>
+  <parameter name="sExportedDashboardName" value="Test"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="User Settings">
+    <parameter name="DashbaordNameAs" value="Testing"/>
+    <parameter name="sExportedSetName" value="event"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sExportedViewletName" value="Viewlet"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ImportedDashboardName" value="Open New Dashboard"/>
+    <parameter name="sExportedDashboardName" value="Test"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_ImportAndExport">
+        <methods>
+          <include name="Login"/>
+          <include name="OpenviewletWithExistingDashboard"/>
+          <include name="OpenviewletWithNewDashboard"/>
+          <include name="DeleteImportedDataFile"/>
+          <include name="ImportViewlet"/>
+          <include name="ExportViewlet"/>
+          <include name="ImportDashboard"/>
+          <include name="ExportDashboard"/>
+          <include name="ImportSet"/>
+          <include name="ExportSet"/>
+          <include name="Logout"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_ImportAndExport -->
+    </classes>
+  </test> <!-- User Settings -->
+  <test name="User Settings(failed)">
+    <parameter name="DashbaordNameAs" value="Testing"/>
+    <parameter name="sExportedSetName" value="event"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sExportedViewletName" value="Viewlet"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="ImportedDashboardName" value="Open New Dashboard"/>
+    <parameter name="sExportedDashboardName" value="Test"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="MenuBar.MenuBar_ImportAndExport">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="DeleteImportedDataFile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- MenuBar.MenuBar_ImportAndExport -->
+    </classes>
+  </test> <!-- User Settings(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (8)] -->

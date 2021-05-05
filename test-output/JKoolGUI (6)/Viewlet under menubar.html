@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>TestNG:  Viewlet under menubar</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Viewlet under menubar</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 06 17:03:27 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>312 seconds (312120 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.CreateViewletWithAFormFromMenubar()'><b>CreateViewletWithAFormFromMenubar</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: org.testng.TestRunner@1786150f<br/>
+<a href="#Output-140260642" onClick='toggleBox("Output-140260642", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-140260642" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-140260642">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/CreateViewletWithAFormFromMenubar.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.CreateViewletWithQueryFromMenubar()'><b>CreateViewletWithQueryFromMenubar</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: Get number of events show as table, Create viewlet from Menu bar with Query8, TestViewlet, org.testng.TestRunner@1786150f<br/>
+<a href="#Output-64271451" onClick='toggleBox("Output-64271451", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-64271451" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-64271451">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/CreateViewletWithQueryFromMenubar.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.CreateviewletFromOpenOption()'><b>CreateviewletFromOpenOption</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: TestViewlet, SaveAsViewlet, org.testng.TestRunner@1786150f<br/>
+<a href="#Output-109193638" onClick='toggleBox("Output-109193638", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-109193638" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-109193638">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/CreateviewletFromOpenOption.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.Login()'><b>Login</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: Drivers/chromedriver.exe, webdriver.chrome.driver, TestViewlet<br/>
+<a href="#Output-1095666481" onClick='toggleBox("Output-1095666481", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1095666481" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1095666481">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>39</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.Logout()'><b>Logout</b><br>Test class: MenuBar.MenuBar_Viewlet</td>
+<td></td>
+<td>6</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.OpenExistingViewletFromMenubar()'><b>OpenExistingViewletFromMenubar</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: ViewletFoam, TestViewlet, org.testng.TestRunner@1786150f<br/>
+<a href="#Output-1811058529" onClick='toggleBox("Output-1811058529", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1811058529" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1811058529">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/OpenExistingViewletFromMenubar.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+<tr>
+<td title='MenuBar.MenuBar_Viewlet.VerifyOpenViewletOptionsFromMenubar()'><b>VerifyOpenViewletOptionsFromMenubar</b><br>Test class: MenuBar.MenuBar_Viewlet<br>Parameters: org.testng.TestRunner@1786150f<br/>
+<a href="#Output-1439235168" onClick='toggleBox("Output-1439235168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1439235168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1439235168">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/VerifyOpenViewletOptionsFromMenubar.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>MenuBar.MenuBar_Viewlet@464bee09</td></tr>
+</table><p>
+</body>
+</html>

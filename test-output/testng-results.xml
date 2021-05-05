@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="10" total="27" passed="15">
+  <reporter-output>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Browser.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationTextCheckbox.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationText.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/TermsOfServiceURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/PrivacyURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/ForgotPasswordURL.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: ForgotPasswordURL<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsFailure/ForgotPasswordURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/CopyRight.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LandingPageText.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LicenseURLCheckbox.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/HelpURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LeaveFeedback.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/CollectorsURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[Screenshots/ScreenshotsFailure/LicenseURL.png]]>
+    </line>
+    <line>
+      <![CDATA[<br/>Failed to execute method: LicenseURL<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsFailure/LicenseURL.png" alt="""/" />]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Closebrowser.png" alt="""/" />]]>
+    </line>
+  </reporter-output>
+  <suite name="Admin Settings" duration-ms="468640" started-at="2021-01-29T12:19:54Z" finished-at="2021-01-29T12:27:42Z">
+    <groups>
+    </groups>
+    <test name="Branding Logos" duration-ms="468640" started-at="2021-01-29T12:19:54Z" finished-at="2021-01-29T12:27:42Z">
+      <class name="AdminSettings.AdminSettings_BrandingLogos">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="beforeTest" is-config="true" duration-ms="8" started-at="2021-01-29T17:49:54Z" finished-at="2021-01-29T17:49:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="Browser(java.lang.String, java.lang.String)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="Browser" duration-ms="12978" started-at="2021-01-29T17:49:54Z" finished-at="2021-01-29T17:50:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Drivers/chromedriver.exe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[webdriver.chrome.driver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Browser.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="346" started-at="2021-01-29T17:50:07Z" finished-at="2021-01-29T17:50:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Browser status=SUCCESS method=AdminSettings_BrandingLogos.Browser(java.lang.String, java.lang.String)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Login()[pri:1, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="Login" duration-ms="43258" started-at="2021-01-29T17:50:07Z" finished-at="2021-01-29T17:50:50Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="711" started-at="2021-01-29T17:50:50Z" finished-at="2021-01-29T17:50:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login status=SUCCESS method=AdminSettings_BrandingLogos.Login()[pri:1, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="RegistrationTextCheckbox(org.testng.ITestContext)[pri:8, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="RegistrationTextCheckbox" duration-ms="5785" started-at="2021-01-29T17:50:51Z" finished-at="2021-01-29T17:50:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationTextCheckbox.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RegistrationTextCheckbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5993" started-at="2021-01-29T17:51:08Z" finished-at="2021-01-29T17:51:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegistrationTextCheckbox status=SUCCESS method=AdminSettings_BrandingLogos.RegistrationTextCheckbox(org.testng.ITestContext)[pri:8, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="RegistrationText(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="RegistrationText" duration-ms="68" started-at="2021-01-29T17:51:14Z" finished-at="2021-01-29T17:51:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nagaraju]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nagaraju21]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationText.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RegistrationText -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="4653" started-at="2021-01-29T17:51:25Z" finished-at="2021-01-29T17:51:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegistrationText status=SUCCESS method=AdminSettings_BrandingLogos.RegistrationText(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:9, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="RegistrationURL(org.testng.ITestContext)[pri:10, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="RegistrationURL" duration-ms="2251" started-at="2021-01-29T17:51:29Z" finished-at="2021-01-29T17:51:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/RegistrationURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- RegistrationURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="4860" started-at="2021-01-29T17:51:42Z" finished-at="2021-01-29T17:51:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RegistrationURL status=SUCCESS method=AdminSettings_BrandingLogos.RegistrationURL(org.testng.ITestContext)[pri:10, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="TermsOfServiceURL(org.testng.ITestContext)[pri:11, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="TermsOfServiceURL" duration-ms="63" started-at="2021-01-29T17:51:47Z" finished-at="2021-01-29T17:51:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/TermsOfServiceURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TermsOfServiceURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5751" started-at="2021-01-29T17:51:56Z" finished-at="2021-01-29T17:52:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TermsOfServiceURL status=SUCCESS method=AdminSettings_BrandingLogos.TermsOfServiceURL(org.testng.ITestContext)[pri:11, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="PrivacyURL(org.testng.ITestContext)[pri:12, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="PrivacyURL" duration-ms="45" started-at="2021-01-29T17:52:02Z" finished-at="2021-01-29T17:52:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/PrivacyURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- PrivacyURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="4768" started-at="2021-01-29T17:52:12Z" finished-at="2021-01-29T17:52:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PrivacyURL status=SUCCESS method=AdminSettings_BrandingLogos.PrivacyURL(org.testng.ITestContext)[pri:12, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="ForgotPasswordURL(org.testng.ITestContext)[pri:13, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="ForgotPasswordURL" duration-ms="28808" started-at="2021-01-29T17:52:17Z" finished-at="2021-01-29T17:52:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"Forgot password field failed"}
+  (Session info: chrome=88.0.4324.104)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-P3LD1OLC', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\kagit\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53116}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.104, webStorageEnabled: true}
+Session ID: 4598e6d04907e15b520b2201f78e5ac9
+*** Element info: {Using=id, value=Forgot password field failed}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"Forgot password field failed"}
+  (Session info: chrome=88.0.4324.104)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-P3LD1OLC', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\kagit\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53116}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.104, webStorageEnabled: true}
+Session ID: 4598e6d04907e15b520b2201f78e5ac9
+*** Element info: {Using=id, value=Forgot password field failed}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at AdminSettings.AdminSettings_BrandingLogos.ForgotPasswordURL(AdminSettings_BrandingLogos.java:871)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: ForgotPasswordURL<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsFailure/ForgotPasswordURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ForgotPasswordURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="4704" started-at="2021-01-29T17:52:57Z" finished-at="2021-01-29T17:53:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ForgotPasswordURL status=FAILURE method=AdminSettings_BrandingLogos.ForgotPasswordURL(org.testng.ITestContext)[pri:13, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>Failed to execute method: ForgotPasswordURL<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/ForgotPasswordURL.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="CopyRight(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="CopyRight" duration-ms="26768" started-at="2021-01-29T17:53:02Z" finished-at="2021-01-29T17:53:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nagaraju]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nagaraju21]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/CopyRight.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CopyRight -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5437" started-at="2021-01-29T17:53:40Z" finished-at="2021-01-29T17:53:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CopyRight status=SUCCESS method=AdminSettings_BrandingLogos.CopyRight(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:14, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="LandingPageText(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="LandingPageText" duration-ms="40418" started-at="2021-01-29T17:53:46Z" finished-at="2021-01-29T17:54:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nagaraju]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nagaraju21]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LandingPageText.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LandingPageText -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5413" started-at="2021-01-29T17:54:37Z" finished-at="2021-01-29T17:54:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LandingPageText status=SUCCESS method=AdminSettings_BrandingLogos.LandingPageText(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:16, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="LicenseURLCheckbox(org.testng.ITestContext)[pri:18, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="LicenseURLCheckbox" duration-ms="4718" started-at="2021-01-29T17:54:42Z" finished-at="2021-01-29T17:54:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LicenseURLCheckbox.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LicenseURLCheckbox -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5253" started-at="2021-01-29T17:54:57Z" finished-at="2021-01-29T17:55:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LicenseURLCheckbox status=SUCCESS method=AdminSettings_BrandingLogos.LicenseURLCheckbox(org.testng.ITestContext)[pri:18, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="HelpURL(org.testng.ITestContext)[pri:19, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="HelpURL" duration-ms="16582" started-at="2021-01-29T17:55:02Z" finished-at="2021-01-29T17:55:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/HelpURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- HelpURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5762" started-at="2021-01-29T17:55:29Z" finished-at="2021-01-29T17:55:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HelpURL status=SUCCESS method=AdminSettings_BrandingLogos.HelpURL(org.testng.ITestContext)[pri:19, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="LeaveFeedback(org.testng.ITestContext)[pri:20, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="LeaveFeedback" duration-ms="14527" started-at="2021-01-29T17:55:35Z" finished-at="2021-01-29T17:55:50Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/LeaveFeedback.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LeaveFeedback -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5118" started-at="2021-01-29T17:56:01Z" finished-at="2021-01-29T17:56:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LeaveFeedback status=SUCCESS method=AdminSettings_BrandingLogos.LeaveFeedback(org.testng.ITestContext)[pri:20, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="CollectorsURL(java.lang.String, org.testng.ITestContext)[pri:21, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="CollectorsURL" duration-ms="14554" started-at="2021-01-29T17:56:06Z" finished-at="2021-01-29T17:56:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.nastel.com/#collectors]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/CollectorsURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CollectorsURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5448" started-at="2021-01-29T17:56:31Z" finished-at="2021-01-29T17:56:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CollectorsURL status=SUCCESS method=AdminSettings_BrandingLogos.CollectorsURL(java.lang.String, org.testng.ITestContext)[pri:21, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="LicenseURL(org.testng.ITestContext)[pri:22, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="LicenseURL" duration-ms="26774" started-at="2021-01-29T17:56:36Z" finished-at="2021-01-29T17:57:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"id","selector":"License url failed"}
+  (Session info: chrome=88.0.4324.104)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-P3LD1OLC', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\kagit\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53116}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.104, webStorageEnabled: true}
+Session ID: 4598e6d04907e15b520b2201f78e5ac9
+*** Element info: {Using=id, value=License url failed}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"License url failed"}
+  (Session info: chrome=88.0.4324.104)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-P3LD1OLC', ip: '192.168.43.213', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\kagit\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53116}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 88.0.4324.104, webStorageEnabled: true}
+Session ID: 4598e6d04907e15b520b2201f78e5ac9
+*** Element info: {Using=id, value=License url failed}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at AdminSettings.AdminSettings_BrandingLogos.LicenseURL(AdminSettings_BrandingLogos.java:1387)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>Failed to execute method: LicenseURL<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsFailure/LicenseURL.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LicenseURL -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="5420" started-at="2021-01-29T17:57:16Z" finished-at="2021-01-29T17:57:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LicenseURL status=FAILURE method=AdminSettings_BrandingLogos.LicenseURL(org.testng.ITestContext)[pri:22, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>Failed to execute method: LicenseURL<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Screenshots/ScreenshotsFailure/LicenseURL.png]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Logoutmessage(org.testng.ITestContext)[pri:24, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="Logoutmessage" duration-ms="8822" started-at="2021-01-29T17:57:22Z" finished-at="2021-01-29T17:57:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@480d3575]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logoutmessage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-29T17:57:41Z" finished-at="2021-01-29T17:57:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logoutmessage status=SUCCESS method=AdminSettings_BrandingLogos.Logoutmessage(org.testng.ITestContext)[pri:24, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Closebrowser()[pri:26, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="Closebrowser" duration-ms="212" started-at="2021-01-29T17:57:41Z" finished-at="2021-01-29T17:57:42Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br/>]]>
+            </line>
+            <line>
+              <![CDATA[<img src=" F:\Automation\Xray/Screenshots/ScreenshotsSuccess/Closebrowser.png" alt="""/" />]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Closebrowser -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef]" name="tearDown" is-config="true" duration-ms="700" started-at="2021-01-29T17:57:42Z" finished-at="2021-01-29T17:57:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Closebrowser status=SUCCESS method=AdminSettings_BrandingLogos.Closebrowser()[pri:26, instance:AdminSettings.AdminSettings_BrandingLogos@3a82f6ef] output=<br/>]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- AdminSettings.AdminSettings_BrandingLogos -->
+    </test> <!-- Branding Logos -->
+  </suite> <!-- Admin Settings -->
+</testng-results>

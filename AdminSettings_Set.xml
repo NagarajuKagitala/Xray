@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Admin Settings">
+        <test name="Get Collectors">
+    	<parameter name="sUsername" value="prashant"/>
+		<parameter name="sPassword" value="prashant11"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="SetName" value="AutoSet"/>
+		<parameter name="Criteria" value="datediff(props('OperationTime'),props('PutTime'))> 1min"/>
+		<parameter name="ObjectiveName" value="SLA"/>
+		<parameter name="Objective" value="ElapsedTime&#60;=2 seconds"/>
+		
+		<parameter name="CollectorsTitle" value="Core Technical Content from Nastel Technologies"/>
+		
+			<classes>
+			    <class name="AdminSettings.AdminSettings_Set">
+			       <methods>
+                          <include name="Login" />
+                           <include name="CreateSet" /> 
+                           <include name="EditSet" />  
+                           <include name="DeleteSet"/>  
+                           <include name="Logout"/>                                          
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite>  
+  

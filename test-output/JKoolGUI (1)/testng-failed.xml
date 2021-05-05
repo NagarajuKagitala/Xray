@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [JKoolGUI (1)]">
+  <parameter name="QueryBefore" value="get Event show as table"/>
+  <parameter name="driver" value="driver"/>
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="NewQuery" value="Get Activities show as table"/>
+  <parameter name="sUsername" value="nagaraju"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="/index.jsp"/>
+  <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+  <parameter name="NewViewletName" value="SaveAsViewlet1"/>
+  <parameter name="sPassword" value="nagaraju21"/>
+  <test name="Edit Viewlet Options">
+    <parameter name="QueryBefore" value="get Event show as table"/>
+    <parameter name="driver" value="driver"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="NewQuery" value="Get Activities show as table"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+    <parameter name="NewViewletName" value="SaveAsViewlet1"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_EditViewletOption">
+        <methods>
+          <include name="Login"/>
+          <include name="CreateViewletWithAForm"/>
+          <include name="EditOptionInViewletMenu"/>
+          <include name="EditviewletWindowOptions"/>
+          <include name="CloseButton"/>
+          <include name="PreviewButton"/>
+          <include name="ApplyButton"/>
+          <include name="SaveOption"/>
+          <include name="SaveAsOption"/>
+          <include name="RemoveOption"/>
+          <include name="DeleteOption"/>
+          <include name="ExportOption"/>
+          <include name="shareviewlet"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_EditViewletOption -->
+    </classes>
+  </test> <!-- Edit Viewlet Options -->
+  <test name="Edit Viewlet Options(failed)">
+    <parameter name="QueryBefore" value="get Event show as table"/>
+    <parameter name="driver" value="driver"/>
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="NewQuery" value="Get Activities show as table"/>
+    <parameter name="sUsername" value="nagaraju"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="/index.jsp"/>
+    <parameter name="DownloadPath" value="F:\JKool Reports\Exported CSV Files"/>
+    <parameter name="NewViewletName" value="SaveAsViewlet1"/>
+    <parameter name="sPassword" value="nagaraju21"/>
+    <classes>
+      <class name="ViewletLevel.ViewletLevel_EditViewletOption">
+        <methods>
+          <include name="shareviewlet" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ViewletLevel.ViewletLevel_EditViewletOption -->
+    </classes>
+  </test> <!-- Edit Viewlet Options(failed) -->
+</suite> <!-- Failed suite [JKoolGUI (1)] -->

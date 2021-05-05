@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+
+  <test name="SampleDevops">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-DevOps"/>
+        <parameter name="StckCharttooltipMsg" value="Severity: INFO EventName: AcceptanceStart StartTime: Range between 1/28/2017, 1:17:00 AM and 1/28/2017, 1:18:00 AM Events Count: 8"/>
+
+
+               <classes>
+
+                       <class name="GlobalRepositories.GlobalRepo_SampleDevops">
+
+
+                              <methods>
+
+                                       <include name="Login"/>
+                                       <include name="SelectRepositories"/>    
+                                    <!--    <include name="Threat_Summary"/>    --> 
+                                       <include name="Build_scorecard"/>
+                                  <!--      <include name="ALL_Events"/>   -->               
+                                      <!--   <include name="Event_Stackcart"/> -->
+                                    <!--    <include name="Comparison_of_Longest_Build_Steps"/>   -->
+                                    <!--   <include name="Step_Severity_Levels"/>  
+                                       <include name="Events_By_Hour"/>  -->                                                                     
+                                       <include name="Logout"/>     
+                                         
+                              </methods>
+
+                        </class>
+
+                 </classes>
+
+  </test>
+
+</suite>

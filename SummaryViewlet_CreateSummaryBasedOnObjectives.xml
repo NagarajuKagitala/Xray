@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Summary viewlet Based on Objectives ">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="SummaryObjective"/>
+		<parameter name="DataType" value="event"/>
+		
+			<classes>
+			    <class name="SummaryViewlets.SummaryViewlet_CreateSummaryBasedOnObjectives">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateSummaryViewletBasedOnObjectives"/>                     
+                          <include name="Logout"/> 
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

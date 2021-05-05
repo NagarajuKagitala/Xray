@@ -1,0 +1,35 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Viewlet under menubar">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="DashboardName" value="TestViewlet"/>
+		
+		<parameter name="Query" value="Get number of events show as table"/>
+		<parameter name="ViewletName" value="Create viewlet from Menu bar with Query8"/>
+		
+		<parameter name="Viewlet" value="ViewletForm"/>
+		<parameter name="ViewletFromOption" value="SaveAsViewlet"/>
+		
+		
+			<classes>
+			    <class name="MenuBar.MenuBar_Viewlet">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletWithQueryFromMenubar"/> 
+                          <include name="CreateViewletWithAFormFromMenubar"/>   
+                          <include name="OpenExistingViewletFromMenubar"/>    
+                          <include name="VerifyOpenViewletOptionsFromMenubar"/> 
+                          <include name="CreateviewletFromOpenOption"/>          
+                         <include name="Logout"/>  
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

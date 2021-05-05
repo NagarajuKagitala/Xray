@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<test name="Chrome" preserve-order="false">
+		<parameter name="sUsername" value="nagaraju" />
+		<parameter name="sPassword" value="nagaraju21" />
+		<parameter name="sDriver" value="webdriver.chrome.driver" />
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe" />
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="Query" value="Get number of Event where Severity ='INFO' group by Severity order by Severity show as piechart"/>
+
+		<classes>
+			<class name="AdminSettings.AdminSettings_Graph">
+				<methods>
+					<include name="Login" />
+				    <include name="OpenGraphSettings" />
+				    <include name="CheckSeveritySettings" />  
+					<include name="ChangeSeveritySettings" />
+				    <include name="ChangeSeveritybyStandardcolor" /> 
+					<include name="ChangeSeveritybyWebcolor" /> 
+			    	<include name="Logout" />    
+
+
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleMobile">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-Mobile"/>
+    
+               <classes>
+
+                     <class name="GlobalRepositories.GlobalRepo_SampleMobile">
+
+                            <methods>
+
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                            <!--      <include name="AbandonedCartsby_Carrier"/>  -->                                    
+                                     <!--         <include name="Abandoned_Carts_by_Location"/>                                      
+                                      <include name="Order_Amount_and_Items_Sold_by_Application_Version"/>    -->                                  
+                                  <!--     <include name="AppNavigationin_TimeOrder"/>    -->                                   
+                                  <!--     <include name="Slow_Orders"/>  -->                                     
+<!--                                       <include name="Performance_AvgElapsedTime_by_Carrier"/>                                     
+ -->                              <!--        <include name="ApplicationPerformanceIndexAnalytics_ApdexScores"/>  -->                                     
+                                       <include name="Anomalies_via_Bollinger_Bands"/>                                   
+                                  <!--       <include name="Crashesby_ScreenName"/>    -->                                   
+                                   <!--    <include name="PredictedCustomer_Sentiment"/>                                     
+                                      <include name="LearningRulesfor_CustomerSentiment"/>                                      
+                                      <include name="PredictedRiskofLosingcustomerbasedon_AppVersion"/>                                      
+                                      <include name="PredictedSatisfied_basedon_AppVersion"/>                                     
+                                      <include name="PredictedRisk_ofLosingbasedon_iOSVersion"/>                                      
+                                      <include name="PredictedSatisfied_based_on_iOSVersion"/>                                    
+                                      <include name="PredictedRisk_of_Losing_based_on_PhoneCarrier"/>                                    
+                                      <include name="Predicted_Satisfied_based_on_PhoneCarrier"/>   -->                                   
+                                 <!--       <include name="LearningData_for_Customers_at_Risk_of_Losing"/>                                     
+                                      <include name="Learning_Data_for_SatisfiedCustomers"/>                                     
+                                      <include name="PredictedDatax_Risk_Losing_Customer"/>                                     
+                                      <include name="PredictedData_Satisfied_Customer"/>                                     
+                                     <include name="Learning_Rules"/>  --> 
+                                                                           
+                                      
+                                    
+                            </methods>
+
+                     </class>
+
+               </classes>
+
+  </test>
+
+</suite>

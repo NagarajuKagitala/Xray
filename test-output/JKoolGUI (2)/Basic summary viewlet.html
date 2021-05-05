@@ -1,0 +1,610 @@
+<html>
+<head>
+<title>TestNG:  Basic summary viewlet</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Basic summary viewlet</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/4/4</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 20 13:26:24 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>389 seconds (389782 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditOptionInSummaryViewlet()'><b>EditOptionInSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: TestUpdate, org.testng.TestRunner@18989e0<br/>
+<a href="#Output-1602016526" onClick='toggleBox("Output-1602016526", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1602016526" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1602016526">
+<br/>Failed to execute method: EditOptionInSummaryViewlet<br/><br/>
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsFailure/EditOptionInSummaryViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditOptionInSummaryViewlet(SummaryViewlet_CreateBasicSummaryViewlet.java:386)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1602016526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1602016526'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditOptionInSummaryViewlet(SummaryViewlet_CreateBasicSummaryViewlet.java:386)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditSummaryViewletQuery()'><b>EditSummaryViewletQuery</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Get count of Event Show as summary, org.testng.TestRunner@18989e0<br/>
+<a href="#Output-1912308481" onClick='toggleBox("Output-1912308481", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1912308481" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1912308481">
+<br/>Failed to execute method: EditSummaryViewletQuery<br/><br/>
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsFailure/EditSummaryViewletQuery.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div[2]/div/div/div
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div[2]/div/div/div}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditSummaryViewletQuery(SummaryViewlet_CreateBasicSummaryViewlet.java:361)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1912308481", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1912308481'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div[2]/div/div/div
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div[2]/div/div/div}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.EditSummaryViewletQuery(SummaryViewlet_CreateBasicSummaryViewlet.java:361)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>28</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.SaveSummaryViewlet()'><b>SaveSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: org.testng.TestRunner@18989e0<br/>
+<a href="#Output-887722188" onClick='toggleBox("Output-887722188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-887722188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-887722188">
+<br/>Failed to execute method: SaveSummaryViewlet<br/><br/>
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsFailure/SaveSummaryViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.SaveSummaryViewlet(SummaryViewlet_CreateBasicSummaryViewlet.java:441)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace887722188", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace887722188'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=xpath, value=//div[6]/div/ul/li/div/div/div/div/div/div/div[2]/div[8]/i}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.SaveSummaryViewlet(SummaryViewlet_CreateBasicSummaryViewlet.java:441)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>10</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.VerifyRecordsCount()'><b>VerifyRecordsCount</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: org.testng.TestRunner@18989e0<br/>
+<a href="#Output-1491084121" onClick='toggleBox("Output-1491084121", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1491084121" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491084121">
+<br/>Failed to execute method: VerifyRecordsCount<br/><br/>
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsFailure/VerifyRecordsCount.png" alt="""/" /><br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #Records\ count\ not\ matched
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=id, value=Records count not matched}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.VerifyRecordsCount(SummaryViewlet_CreateBasicSummaryViewlet.java:227)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491084121", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1491084121'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #Records\ count\ not\ matched
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;NASTEL2&apos;, ip: &apos;192.168.1.205&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 72.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200107212822, moz:geckodriverVersion: 0.22.0, moz:headless: false, moz:processID: 17940, moz:profile: C:\Users\nastel2\AppData\Lo..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7913b706-6595-497f-8fa4-d51a66bb7009
+*** Element info: {Using=id, value=Records count not matched}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:368)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.VerifyRecordsCount(SummaryViewlet_CreateBasicSummaryViewlet.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>11</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.ConsoleTabFunctionality()'><b>ConsoleTabFunctionality</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: org.testng.TestRunner@18989e0<br/>
+<a href="#Output-1256493959" onClick='toggleBox("Output-1256493959", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1256493959" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1256493959">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/ConsoleTabFunctionality.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.CreateSummaryViewlet()'><b>CreateSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Get count of Activity Show as summary, org.testng.TestRunner@18989e0<br/>
+<a href="#Output-160804176" onClick='toggleBox("Output-160804176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-160804176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-160804176">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/CreateSummaryViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.Login()'><b>Login</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Drivers/geckodriver.exe, webdriver.gecko.driver<br/>
+<a href="#Output-196161345" onClick='toggleBox("Output-196161345", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-196161345" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-196161345">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/Login.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>53</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.Logout()'><b>Logout</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet</td>
+<td></td>
+<td>6</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.ObservationOfQuery()'><b>ObservationOfQuery</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Get Activity  , org.testng.TestRunner@18989e0<br/>
+<a href="#Output-1711445717" onClick='toggleBox("Output-1711445717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1711445717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1711445717">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/ObservationOfQuery.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.QueryInTemporaryViewlet()'><b>QueryInTemporaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Get Events, org.testng.TestRunner@18989e0<br/>
+<a href="#Output-933489703" onClick='toggleBox("Output-933489703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-933489703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-933489703">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/QueryInTemporaryViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.TemporaryViewlet()'><b>TemporaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet<br>Parameters: Temporary viewlet, org.testng.TestRunner@18989e0<br/>
+<a href="#Output-950243028" onClick='toggleBox("Output-950243028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-950243028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-950243028">
+<br/><br/>
+<img src=" F:\Prashant\automation\JkoolTest/Screenshots/ScreenshotsSuccess/TemporaryViewlet.png" alt="""/" /><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.DeleteSummaryViewlet()'><b>DeleteSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet</td>
+<td><div><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.DeleteSummaryViewlet(java.lang.String, org.testng.ITestContext)[pri:12, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace967022668", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace967022668'><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.DeleteSummaryViewlet(java.lang.String, org.testng.ITestContext)[pri:12, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.ExportSummaryViewlet()'><b>ExportSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet</td>
+<td><div><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.ExportSummaryViewlet(org.testng.ITestContext)[pri:13, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729995001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729995001'><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.ExportSummaryViewlet(org.testng.ITestContext)[pri:13, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.RemoveSummaryViewlet()'><b>RemoveSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet</td>
+<td><div><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.RemoveSummaryViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace43787342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace43787342'><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.RemoveSummaryViewlet(java.lang.String, java.lang.String, org.testng.ITestContext)[pri:11, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet.SaveASSummaryViewlet()'><b>SaveASSummaryViewlet</b><br>Test class: SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet</td>
+<td><div><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.SaveASSummaryViewlet(java.lang.String, org.testng.ITestContext)[pri:10, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1219735992", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1219735992'><pre>java.lang.Throwable: Method SummaryViewlet_CreateBasicSummaryViewlet.SaveASSummaryViewlet(java.lang.String, org.testng.ITestContext)[pri:10, instance:SummaryViewlets.SummaryViewlet_CreateBasicSummaryViewlet@6093dd95] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+</body>
+</html>

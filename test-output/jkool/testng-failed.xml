@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [jkool]">
+  <parameter name="sDriver" value="webdriver.chrome.driver"/>
+  <parameter name="sUsername" value="prs_suryawanshi"/>
+  <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+  <parameter name="sURL" value="https://xray.nastel.com/xray/O_prssuryawanshi/login.jsp"/>
+  <parameter name="sPassword" value="ps12345"/>
+  <parameter name="sRepositories" value="Covid19"/>
+  <test name="SampleCovid">
+    <parameter name="sDriver" value="webdriver.chrome.driver"/>
+    <parameter name="sUsername" value="prs_suryawanshi"/>
+    <parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+    <parameter name="sURL" value="https://xray.nastel.com/xray/O_prssuryawanshi/login.jsp"/>
+    <parameter name="sPassword" value="ps12345"/>
+    <parameter name="sRepositories" value="Covid19"/>
+    <classes>
+      <class name="GlobalRepositories.GlobalRepo_Covid19">
+        <methods>
+          <include name="Login"/>
+          <include name="SelectRepositories"/>
+          <include name="SummaryViewlet"/>
+          <include name="top_10_countries_by_confirm_cases"/>
+        </methods>
+      </class> <!-- GlobalRepositories.GlobalRepo_Covid19 -->
+    </classes>
+  </test> <!-- SampleCovid -->
+</suite> <!-- Failed suite [jkool] -->

@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JKoolGUI">
+        <test name="Viewlet with query">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		<parameter name="DashboardName" value="QueryViewlet"/>
+		
+		
+		<parameter name="Query" value="Get events show as table"/>
+		<parameter name="ViewletName" value="CreateViewlet1"/>
+		
+		<parameter name="NewQuery" value="Get Activities show as table"/>
+		
+			<classes>
+			    <class name="ViewletLevel.ViewletLevel_CreateViewletWithQuery">
+			       <methods>
+                          <include name="Login" />
+                          <include name="CreateViewletwithquery"/>
+                          <include name="EditQuery"/>
+                          <include name="UndoIconFunctionalityIntheViewlet"/>  
+                          <include name="RedoIconFunctionalityIntheViewlet"/>  
+                          <include name="ChangeChartTypeIcon"/> 
+                          <include name="ChartTypes"/>  
+                          <include name="Refresh"/>
+                          <include name="MinimizeViewlet"/>                      
+                          <include name="Logout"/> 
+                          
+                                                                 
+                      </methods>
+                  </class>
+			</classes>
+    </test> 
+</suite>

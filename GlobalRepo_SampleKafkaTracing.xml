@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleIBM_MQ_Tracing">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-Kafka_Tracing"/>
+       
+
+            <classes>
+
+                  <class name="GlobalRepositories.GlobalRepo_SampleKafkaTracing">
+                      <methods>
+
+                              <include name="Login"/>
+                              <include name="SelectRepositories"/>
+                              <include name="size_Breakdown"/> 
+                              <include name="Keysize_Breakdown"/>
+                              <include name="Topic_breakdown"/>
+                              <include name="publish_rate"/>
+                              <include name="kafka_message_rate_SizeBreakdown"/>
+                              <include name="kafka_partituons_partion_alnalysis"/>
+                              <include name="kafaka_partitions_Keysize_Breakdown"/>
+                              <include name="Logout"/>
+                                                 
+                              
+  
+                    </methods>
+
+            </class>
+
+        </classes>
+
+  </test>
+
+</suite>

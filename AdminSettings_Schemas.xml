@@ -1,0 +1,36 @@
+<suite name="Admin Settings">
+        <test name="Schemas tab">
+    	<parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+		
+		<parameter name="Searchdata" value="Test"/>
+		
+		<parameter name="SchemaName" value="New Schema"/>
+		<parameter name="SchemaName1" value="creare"/>
+		<parameter name="ItemName" value="Event"/>
+		<parameter name="Query" value="Get number of Event show as summary"/>		
+		<parameter name="ListOfAttributes" value="CharSet,Correlator,ChildFQN,Closed,CompCode,Confidences,Correlator,DataCenterName,DeviceName,ElapsedTime,Encoding,EndTime,EventID,EventName,EventType,Exception,ExpireTime,GenericSrcName,GeoLocation,Location,Message,MessageAge,MimeType,MsgLength,MsgSignature,NetworkName,Objectives,ParentFQN,ParentID,Predictions,ProcessID,ProcessName,ReasonCode,ReceivedTime,RelativeType,ReportTime,ResourceName,ResourceType,RuntimeName,ServerName,SetName,Severity,SnapShotCount,SourceFQN,SourceSSN,SourceUserName,StartTime,Statistics,Tag,ThreadID,UpdateTime,UserName,ValueTypes,VirtualSrcName,WaitTime"/>
+		
+		<parameter name="DashboardName" value="Test1"/>
+		
+			<classes>
+			    <class name="AdminSettings.AdminSettings_Schemas">
+			       <methods>
+                          <include name="Login" />
+                          <include name="SchemaSearch"/>
+                          <include name="CreateSchema"/> 
+                          
+                          <include name="EditSchema"/>
+                          <include name="AddSchematoDashboard"/> 
+                          <include name="VerificationOfSchemaAppliedToDashboard"/>
+                          <include name="DeleteSchema"/> 
+                                      
+                          <include name="Logout"/>                                          
+                      </methods>
+                  </class>
+			</classes>
+    </test>
+  </suite>  

@@ -1,0 +1,3 @@
+CFG,RelDates=false
+HDR,Dictionary,DictionaryName,Type,Properties
+ROW,Dictionary,'viewlet-86f1d078-77d0-4239-8d28-aa5afc980584','VIEWLET',"(S:'drilldown.schemaID'='Inherit',S:'drilldown.type'='Console',S:'label'='saveasviewlet',S:'query'='get Event show as table',S:'schemaID'='Inherit',B:'shared'=false,I:'version'=4)"

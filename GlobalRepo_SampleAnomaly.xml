@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="jkool">
+
+  <test name="SampleAnomaly">
+
+        <parameter name="sUsername" value="nagaraju"/>
+		<parameter name="sPassword" value="nagaraju21"/>
+		<parameter name="sDriver" value="webdriver.chrome.driver"/>
+		<parameter name="sDriverPath" value="Drivers/chromedriver.exe"/>
+		<parameter name="sURL" value="/index.jsp"/>
+
+        <parameter name="sRepositories" value="Sample-AnomalyDetection"/>
+        <parameter name="learningQuery" value="get sets fields SetName, Classifier, LearnQuery where classifier is not null show as table"/>
+        <parameter name="learningRules" value="get sets fields Setname, Classifier, Learndata where classifier is not null"/>
+        <parameter name="eventsquery" value="get events fields message, setName order by starttime desc"/>
+        <parameter name="MsgData" value="Customer had to correct a wrong address that was specified when they entered their shipping information."/>
+
+
+             <classes>
+
+                     <class name="GlobalRepositories.GlobalRepo_SampleAnomaly">
+
+                            <methods>
+
+                                      <include name="Login"/>
+                                      <include name="SelectRepositories"/>
+                                     <!--  <include name="Learning_query"/>
+                                      <include name="LearningRules"/>
+                                      <include name="Events"/>  
+                                      <include name="Orders_Anomaly"/>  -->
+                                      <include name="Activities_in_each_hour_withAnomalies"/> 
+                                      <include name="Logout"/>
+
+                           </methods>
+
+                    </class>
+
+           </classes>
+
+  </test>
+
+</suite>
